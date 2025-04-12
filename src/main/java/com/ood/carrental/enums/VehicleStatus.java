@@ -1,4 +1,4 @@
-package com.ood.carrental;
+package com.ood.carrental.enums;
 
 public enum VehicleStatus {
 
