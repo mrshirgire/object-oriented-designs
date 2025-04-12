@@ -118,14 +118,13 @@ public class Initializer {
         Dice[] dices = new Dice[noOfDices];
         initializeDices(dices, scanner);
 
-        GameData gameData = GameData.builder()
+        return GameData.builder()
                 .board(board)
                 .players(players)
                 .dices(dices)
                 .noOfRows(noOfRows)
                 .noOfCols(noOfCols)
                 .build();
-        return gameData;
     }
 
 
