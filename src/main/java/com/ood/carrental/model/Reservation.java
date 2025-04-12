@@ -1,4 +1,4 @@
-package com.ood.carrental;
+package com.ood.carrental.model;
 
 import com.ood.carrental.enums.ReservationStatus;
 import lombok.Data;

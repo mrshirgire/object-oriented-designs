@@ -1,6 +1,6 @@
 package com.ood.carrental.service;
 
-import com.ood.carrental.User;
+import com.ood.carrental.model.User;
 
 import java.util.Optional;
 

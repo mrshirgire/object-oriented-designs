@@ -1,12 +1,12 @@
-package com.ood.carrental;
+package com.ood.carrental.service;
 
 import com.ood.carrental.exception.VehicleNotFound;
+import com.ood.carrental.model.Vehicle;
 
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class VehicleInventoryManager {
+public class VehicleInventoryService {
 
     Set<Vehicle> vehicles;
     Map<String, Vehicle> vehiclesMap;

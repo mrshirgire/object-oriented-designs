@@ -1,4 +1,4 @@
-package com.ood.carrental;
+package com.ood.carrental.model;
 
 import lombok.Data;
 

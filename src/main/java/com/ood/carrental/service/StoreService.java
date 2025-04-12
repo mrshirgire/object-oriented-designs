@@ -1,6 +1,6 @@
 package com.ood.carrental.service;
 
-import com.ood.carrental.Store;
+import com.ood.carrental.model.Store;
 
 import java.util.List;
 import java.util.UUID;

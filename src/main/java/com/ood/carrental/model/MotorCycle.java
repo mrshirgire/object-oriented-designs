@@ -1,4 +1,4 @@
-package com.ood.carrental;
+package com.ood.carrental.model;
 
 public class MotorCycle extends Vehicle {
 
