@@ -1,0 +1,65 @@
+@startuml
+class SnakeLadderGame {
+    + main(String[]): void
+}
+
+class Initializer {
+    + initializeGame(Scanner): GameData
+}
+
+class GameData {
+    + players: List<Player>
+    + board: Board
+}
+
+class Board {
+    + cells: List<Cell>
+    + size: int
+}
+
+class Cell {
+    - start: int
+    - end: int
+    - type: CellType
+}
+
+class Ladder extends Cell {
+}
+
+class Snake extends Cell {
+}
+
+class Player {
+    - name: String
+    - position: int
+    + Player(String)
+}
+
+class BoardDisplay {
+    + printBoardGrid(GameData): void
+}
+
+class GameRunner {
+    - gameData: GameData
+    - boardDisplay: BoardDisplay
+    + run(): void
+}
+
+enum CellType {
+    LADDER
+    SNAKE
+    NORMAL
+}
+
+SnakeLadderGame --> Initializer
+Initializer --> GameData
+GameData --> Board
+GameData --> Player
+Board --> Cell
+Cell <|-- Ladder
+Cell <|-- Snake
+SnakeLadderGame --> BoardDisplay
+SnakeLadderGame --> GameRunner
+GameRunner --> GameData
+GameRunner --> BoardDisplay
+@enduml
